@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            height: 95vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px 0px
+        }
+
+        .header {
+            width: 100%;
+            height: 10%;
+            background-color: burlywood;
+        }
+
+        .main {
+            display: flex;
+            height: 80%;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: lightseagreen;
+        }
+
+        .content {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        .box1 {
+            height: 50%;
+            width: 100%;
+            background-color: palevioletred;
+        }
+        .box2 {
+            height: 50%;
+            width: 100%;
+            display: flex;
+        }
+
+        .inside1 {
+            width: 50%;
+            background-color: blue;
+        }
+        .inside2 {
+            width: 50%;
+            background-color: green;
+        }
+
+        .footer{
+            width: 100%;
+            background-color: lawngreen;
+            height: 10%;
+        }
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        div {
+              color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLEXBOX</h1>
+    <div class="header center">HEADER</div>    
+    <div class="main">
+        <div class="sidebar center">SIDEBAR</div>
+        <div class="content">
+            <div class="box1 center">MAIN CONTENT</div>
+            <div class="box2">
+                <div class="inside1 center">SUB CONTENT 1</div>
+                <div class="inside2 center">SUB CONTENT 2</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer center">FOOTER</div>
+</body>
+</html>
